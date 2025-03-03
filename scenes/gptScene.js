@@ -19,9 +19,9 @@ gptScene.enter(async (ctx) => {
     ctx.reply('Введите запрос к GPT:', {
         reply_markup: {
             keyboard: [
-                [{ text: "Кто такой Эйнштейн" }],
-                [{ text: "Любовь в двух словах" }],
-                [{ text: "Напиши сочинение на тему Демография" }],
+                [{ text: "Как научиться стрелять" }],
+                [{ text: "Хочу что бы у тиммейтов в кс были белые мониторы, что делать?" }],
+                [{ text: "Я играю в кс, помоги!" }],
             ]
         },
     });
@@ -40,7 +40,7 @@ gptScene.leave( async(ctx) => {
             inline_keyboard: [
                 // [{ text: "Не, все нормал", callback_data: "btn-1" }, { text: "Да, помоги", url: "https://t.me/zheky232" }],
                 [{ text: "Поговори с Нейросетью", callback_data: "btn-2" }],
-                [{ text: "Посмотреть курс валют", callback_data: "bank_action" }],
+                // [{ text: "Посмотреть курс валют", callback_data: "bank_action" }],
                 [{ text: "Или сделай свою картинку:)", callback_data: "btn-3" }]
             ]
         },parse_mode : "HTML"

@@ -191,7 +191,7 @@ const start = async (ctx) => {
                     remove_keyboard: true,
                     inline_keyboard: [
                         [{ text: "Поговори с Нейросетью", callback_data: "btn-2" }],
-                        [{ text: "Посмотреть курс валют", callback_data: "bank_action" }],
+                        // [{ text: "Посмотреть курс валют", callback_data: "bank_action" }],
                         [{ text: "Или сделай свою картинку:)", callback_data: "btn-3" }]
                     ],
                 }, parse_mode: "HTML"
@@ -206,7 +206,7 @@ const start = async (ctx) => {
                     remove_keyboard: true,
                     inline_keyboard: [
                         [{ text: "Поговори с Нейросетью", callback_data: "btn-2" }],
-                        [{ text: "Посмотреть курс валют", callback_data: "bank_action" }],
+                        // [{ text: "Посмотреть курс валют", callback_data: "bank_action" }],
                         [{ text: "Или сделай свою картинку:)", callback_data: "btn-3" }]
                     ],
                 }, parse_mode: "HTML"

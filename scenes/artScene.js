@@ -20,12 +20,12 @@ artScene.enter(async (ctx) => {
     }
 
     ctx.reply(`Добро пожаловать в среду 
-генерирования картинок с помощью <b>искуственного интеллекта</b>
+генерирования аватарок с помощью <b>искуственного интеллекта</b>
 Напишите интересующую <b>Вас</b> идею или <u>выберите из предложенных ниже</u>`, {
         reply_markup: {
             keyboard: [
-                [{ text: "Каменные джунгли" }, { text: "Смешные камни" }],
-                [{ text: "Яблоки на столе" }, { text: "Милые кошечки" }],
+                [{ text: "Мужчина, люблю очки и моторы" }, { text: "Хищник, люблю пельмени и гараж" }],
+                [{ text: "Зверь, Люблю водку, светлая голова" }, { text: "Братская фотка на заводе" }],
             ]
         }, parse_mode: "HTML"
     })
@@ -46,7 +46,7 @@ artScene.leave(async (ctx) => {
             inline_keyboard: [
                 // [{ text: "Не, все нормал", callback_data: "btn-1" }, { text: "Да, помоги", url: "https://t.me/zheky232" }],
                 [{ text: "Поговори с Нейросетью", callback_data: "btn-2" }],
-                [{ text: "Посмотреть курс валют", callback_data: "bank_action" }],
+                // [{ text: "Посмотреть курс валют", callback_data: "bank_action" }],
                 [{ text: "Или сделай свою картинку:)", callback_data: "btn-3" }]
             ]
         }, parse_mode: "HTML"
@@ -79,7 +79,7 @@ artScene.on('text', async (ctx) => {
                     ctx.deleteMessage(message.message_id);
                 }, 4000);
                 setTimeout(() => {
-                    ctx.reply(`Проверьте результат <b>/check</b>`, { parse_mode: "HTML" })
+                    ctx.reply(`Проверьте результат, может понадобиться нажать несколько раз) <b>/check</b>`, { parse_mode: "HTML" })
                 }, 4000)
             });
         try {
